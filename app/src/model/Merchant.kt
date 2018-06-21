@@ -42,5 +42,5 @@ abstract class Merchant(
 
   fun isCheating() = strategy.isCheating()
 
-  fun onColleagueMove(hasCheated: Boolean) = strategy.onColleagueMove(hasCheated)
+  fun onColleagueMove(hasCheated: Boolean, merchant: Merchant) = strategy.onColleagueMove(hasCheated)
 }

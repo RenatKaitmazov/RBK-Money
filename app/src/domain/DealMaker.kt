@@ -60,7 +60,7 @@ class DealMaker(private val generator: Generator) {
       isFirstMerchantCheating = !isFirstMerchantCheating
     }
     // The second merchant needs to know what move has been made by his colleague.
-    merchant2.onColleagueMove(isFirstMerchantCheating)
+    merchant2.onColleagueMove(isFirstMerchantCheating, merchant1)
     // And makes his own move.
     var isSecondMerchantCheating = merchant2.isCheating()
     if (didErrorMakingDeal()) {

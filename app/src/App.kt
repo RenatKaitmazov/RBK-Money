@@ -8,6 +8,6 @@ import domain.Generator
 fun main(args: Array<String>) {
   val dealsPerYear = Generator.numberInRange(5, 10)
   val dealSimulator = DealSimulatorProvider.newDealSimulator(dealsPerYear)
-  val years = 100
+  val years = 500
   dealSimulator.simulate(years)
 }
